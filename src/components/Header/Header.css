@@ -1,0 +1,5 @@
+.header-bottom{
+    border-bottom-width: 1px;
+    width: 100%;
+    border-color: var(--paynes-gray);
+}
