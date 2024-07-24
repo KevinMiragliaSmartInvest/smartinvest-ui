@@ -33,6 +33,7 @@ jobs:
 
       - ecr/build-and-push-image:
           repo: arn:aws:ecr:us-east-2:471112554816:repository/smartinvest-ui 
+          dockerfile: docker/Dockerfile
       
       # Checkout the code as the first step.
       - checkout
