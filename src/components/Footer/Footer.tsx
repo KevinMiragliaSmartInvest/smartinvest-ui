@@ -3,9 +3,11 @@ import "./Footer.css";
 
 function Footer() { 
     return (
-        <div className='full-page-width footer-top'>
+        <div className='full-page-width footer'>
 
-            <div></div>
+            <div>
+                About
+            </div>
         </div>
       );
 }

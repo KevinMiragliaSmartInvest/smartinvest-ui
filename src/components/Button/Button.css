@@ -1,0 +1,16 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gold);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    margin: auto;
+    width: 6em;
+    margin-top: 1rem;
+  }

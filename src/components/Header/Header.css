@@ -1,5 +1,7 @@
-.header-bottom{
+.header{
     border-bottom-width: 1px;
-    width: 100%;
     border-color: var(--paynes-gray);
+    height: 4rem;
+    padding-left: 3rem;
+    padding-top: 1rem;
 }

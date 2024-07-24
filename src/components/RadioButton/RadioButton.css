@@ -1,0 +1,16 @@
+div.radio {
+    display: flex;
+    position: relative;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+  }
+  
+  
+  input.radioButton:checked + label {
+    background: var(--yellow);;
+  }
+  
+  input.radioButton {
+    opacity: 0;
+    position: absolute;
+  }

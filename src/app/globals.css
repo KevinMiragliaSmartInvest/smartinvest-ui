@@ -5,12 +5,31 @@
 :root{
 /* CSS HSL */
 --maize: rgb(255, 253, 239);
---bone: hsla(36, 24%, 84%, 1);
---ivory: hsla(64, 78%, 96%, 1);
---navajo-white: hsla(36, 100%, 83%, 1);
+--gold: rgb(197, 152, 85);
+--yellow: rgb(135, 138, 96);
+--navajo-white: rgb(190, 166, 130);
 --paynes-gray: hsla(196, 20%, 36%, 1);
+}
+
+.full-page-width{
+  width: 100%;
+}
+
+.center{
+  margin:auto;
+}
+
+.main-body{
+  margin-top:3rem;
+  width: 90vw;
 }
 
 main{
   background-color: var(--maize);
+}
+h1{
+  font-weight: 1000;
+}
+h2{
+  font-weight: 800;
 }
