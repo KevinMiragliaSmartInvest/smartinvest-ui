@@ -1,11 +1,16 @@
 import React from 'react'
 import "./FieldSet.css";
 
-function FieldSet(props: { title: string, children: string}) { 
+type FieldSetProps = {
+    title: string,
+    children: string
+}
+
+function FieldSet({ title, children}: FieldSetProps) { 
     return (
         <div className='fieldSet'>
-            <h2>{props.title}</h2> 
-            {props.children}      
+            <h2>{title}</h2> 
+            {children}      
         </div>
       );
 }
