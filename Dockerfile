@@ -1,23 +1,15 @@
-FROM ubuntu:22.04
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y wget 
-
-RUN set -x \
-    && curl -sL 'https://deb.nodesource.com/setup_22.x' | bash - \
-    && apt-get -y install nodejs \
-    && ln -s /usr/bin/nodejs /usr/local/bin/node
+FROM ubuntu:24.10
+RUN apt-get update
 
 RUN  apt-get install -y npm
+RUN apt-get -y install nodejs
 
 
-WORKDIR /app
-COPY package*.json .
 
-RUN ls -la
+RUN mkdir -p /var/app
+WORKDIR /var/app
+COPY package.json .
 RUN npm install
-RUN npm run dev
-
-
-RUN useradd -ms /bin/bash smartinvest
-USER smartinvest
+COPY . .
+EXPOSE 3000
+CMD ["npm", "run", "dev"]
