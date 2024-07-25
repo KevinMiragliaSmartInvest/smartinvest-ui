@@ -20,7 +20,6 @@ workflows:
           account_id: 471112554816
           auth:
             - aws-cli/setup:
-                profile: AWS_ACCOUNT_ID
                 aws_access_key_id: AWS_ACCESS_KEY
                 aws_secret_access_key: AWS_SECRET_ACCESS_KEY
                 region: us-east-2
