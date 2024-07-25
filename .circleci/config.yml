@@ -17,6 +17,7 @@ workflows:
   build_and_push_image:
     jobs:
       - aws-ecr/build_and_push_image:
+          context: AWS
           account_id: "471112554816"
           auth:
             - aws-cli/setup:
