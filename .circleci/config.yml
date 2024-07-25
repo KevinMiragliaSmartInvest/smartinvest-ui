@@ -17,10 +17,10 @@ workflows:
   build_and_push_image:
     jobs:
       - aws-ecr/build_and_push_image:
-          context: "AWS"
           account_id: "471112554816"
           auth:
             - aws-cli/setup:
+                context: "AWS"
                 aws_access_key_id: "${AWS_ACCESS_KEY}"
                 aws_secret_access_key: "${AWS_SECRET_ACCESS_KEY}"
                 region: us-east-2
