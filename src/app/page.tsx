@@ -41,7 +41,7 @@ function App() {
           <Route path="/manage/dashboard"  element={<ManageDashboard/>}></Route>
 
 
-          <Route default exact path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
         </Routes>
         </React.Fragment>
 

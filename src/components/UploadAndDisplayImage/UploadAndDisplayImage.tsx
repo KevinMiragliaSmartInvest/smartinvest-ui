@@ -35,8 +35,10 @@ const UploadAndDisplayImage = () => {
         name="myImage"
         // Event handler to capture file selection and update the state
         onChange={(event) => {
-          console.log(event.target.files[0]); // Log the selected file
-          setSelectedImage(event.target.files[0]); // Update the state with the selected file
+            if(event.target.files){
+                console.log(event.target.files[0]); // Log the selected file
+               // setSelectedImage(event.target.files[0]); // Update the state with the selected file
+            }
         }}
       />
     </div>
