@@ -16,6 +16,8 @@ COPY package*.json .
 
 RUN ls -la
 RUN npm install
+RUN npm run dev
+
 
 RUN useradd -ms /bin/bash smartinvest
 USER smartinvest
