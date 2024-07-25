@@ -28,7 +28,6 @@ workflows:
           no_output_timeout: 20m
           path: docker
           platform: linux/amd64
-          profile_name: ApplicationDelivery
           public_registry: false
           push_image: true
           region: us-east-2
