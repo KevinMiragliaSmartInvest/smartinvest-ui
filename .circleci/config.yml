@@ -22,14 +22,13 @@ workflows:
             - aws-cli/setup:
                 aws_access_key_id: AWS_ACCESS_KEY
                 aws_secret_access_key: AWS_SECRET_ACCESS_KEY
-          context: CircleCI_OIDC_Token
           create_repo: true
           dockerfile: Dockerfile
           extra_build_args: '--compress'
           no_output_timeout: 20m
           path: docker
           platform: linux/amd64
-          profile_name: OIDC-User
+          profile_name: ApplicationDelivery
           public_registry: false
           push_image: true
           region: us-east-2
