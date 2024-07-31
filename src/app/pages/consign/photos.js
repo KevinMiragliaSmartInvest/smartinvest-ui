@@ -10,9 +10,9 @@ export default function ConsignPhotos() {
     <main className="flex min-h-screen flex-col items-center justify-between p-1">
       <div className="main-body center">
         <UploadAndDisplayImage></UploadAndDisplayImage>
-
+        
         <Link to="/consign/review">
-            <Button label="Review"></Button>
+            <Button label="Review test"></Button>
         </Link>
       </div>
     </main>

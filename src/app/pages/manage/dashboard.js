@@ -11,6 +11,11 @@ export default function ManageDashboard() {
     <main className="flex min-h-screen flex-col items-center justify-between p-1">
       <div className="main-body center">
 
+      <div>
+          <h2>Drafts</h2>
+          <Card title="123 Main St"></Card>
+        </div>
+
         <div>
           <h2>Unlisted</h2>
           <Card title="123 Main St"></Card>

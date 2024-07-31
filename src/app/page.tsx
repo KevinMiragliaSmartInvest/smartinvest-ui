@@ -12,6 +12,7 @@ import ManageDashboard from "./pages/manage/dashboard";
 import ManageUnlisted from "./pages/manage/unlisted";
 import ManageListed from "./pages/manage/listed";
 import ManageClosed from "./pages/manage/closed";
+import ManageDrafts from "./pages/manage/closed";
 import About from "./pages/about";
 
 
@@ -24,7 +25,7 @@ function App() {
 
     <BrowserRouter>
       <Header></Header>
-      <main className="flex min-h-screen flex-col items-center justify-between p-1">
+      <main className="">
       <React.Fragment>
         <Routes>
           
@@ -35,6 +36,7 @@ function App() {
           <Route path="/consign/pricing" element={<ConsignPricing/>}></Route>
           <Route path="/consign/photos" element={<ConsignPhotos/>}></Route>
           <Route path="/consign/review" element={<ConsignReview/>}></Route>
+          <Route path="/manage/drafts" element={<ManageDrafts/>}></Route>
           <Route path="/manage/unlisted" element={<ManageUnlisted/>}></Route>
           <Route path="/manage/listed" element={<ManageListed/>}></Route>
           <Route path="/manage/closed" element={<ManageClosed/>}></Route>

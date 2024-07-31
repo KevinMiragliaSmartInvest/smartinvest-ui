@@ -3,7 +3,7 @@ import "./FieldSet.css";
 
 type FieldSetProps = {
     title: string,
-    children: string
+    children: React.ReactNode;
 }
 
 function FieldSet({ title, children}: FieldSetProps) { 
