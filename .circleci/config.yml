@@ -28,9 +28,9 @@ workflows:
           no_output_timeout: 20m
           path: ./
           platform: linux/amd64
-          public_registry: true
+          public_registry: false
           push_image: true
           region: us-east-2
-          repo: smartinvest
+          repo: smartinvest-ui
 
 
