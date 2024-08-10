@@ -2,8 +2,12 @@
     border-bottom-width: 5px;
     border-width: 0 0 1px 0;
     border-color: var(--paynes-gray);
-    height: 4rem;
+    height: 6rem;
     padding-left: .7rem;
     padding-top: 1rem;
     border-style: solid;
+
+    h1{
+        padding-top: .4rem;
+    }
 }

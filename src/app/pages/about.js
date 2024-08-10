@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import Input from "../../components/Input/Input";
 import RadioButton from "../../components/RadioButton/RadioButton";
 import Button from "../../components/Button/Button";
-import Card from "../../components/Card/Card";
+import Card from "../../components/Property/Property";
 
 
 export default function Search() {

@@ -7,14 +7,16 @@ import UploadAndDisplayImage from "@/components/UploadAndDisplayImage/UploadAndD
 
 export default function ConsignPhotos() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-1">
-      <div className="main-body center">
+      <div className="main-body center grid grid-cols-2 gap-2">
+        <div className="col-span-2">
         <UploadAndDisplayImage></UploadAndDisplayImage>
-        
+        </div>
+        <div></div>
+        <div className="consignNavButtons">
         <Link to="/consign/review">
             <Button label="Review test"></Button>
         </Link>
+        </div>
       </div>
-    </main>
   );
 }

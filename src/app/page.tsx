@@ -8,48 +8,50 @@ import ConsignTitle from "./pages/consign/title";
 import ConsignPricing from "./pages/consign/pricing";
 import ConsignPhotos from "./pages/consign/photos";
 import ConsignReview from "./pages/consign/review";
-import ManageDashboard from "./pages/manage/dashboard";
-import ManageUnlisted from "./pages/manage/unlisted";
-import ManageListed from "./pages/manage/listed";
-import ManageClosed from "./pages/manage/closed";
-import ManageDrafts from "./pages/manage/closed";
+import ListedOverview from "./pages/listed/overview";
 import About from "./pages/about";
+import Health from "./pages/health";
+import { createContext, useContext } from 'react';
 
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
+
+export const ThemeContext = createContext(null);
+import PropertyProfile from "@/components/PropertyProfile/PropertyProfile";
+
+PropertyProfile.setPropertyId(null);
+
 function App() {
+
   return (
     <div>
-
     <BrowserRouter>
+      <ThemeContext.Provider value="dark">
       <Header></Header>
       <main className="">
-      <React.Fragment>
         <Routes>
           
           <Route path="/about" element={<About />} />
           <Route path="/signup" element={<About />}/>
+          <Route path="/health" element={<About />}/>
           <Route path="/consign/general" element={<ConsignGeneral/>}></Route>
           <Route path="/consign/title" element={<ConsignTitle/>}></Route>
           <Route path="/consign/pricing" element={<ConsignPricing/>}></Route>
           <Route path="/consign/photos" element={<ConsignPhotos/>}></Route>
           <Route path="/consign/review" element={<ConsignReview/>}></Route>
-          <Route path="/manage/drafts" element={<ManageDrafts/>}></Route>
-          <Route path="/manage/unlisted" element={<ManageUnlisted/>}></Route>
-          <Route path="/manage/listed" element={<ManageListed/>}></Route>
-          <Route path="/manage/closed" element={<ManageClosed/>}></Route>
-          <Route path="/manage/dashboard"  element={<ManageDashboard/>}></Route>
+          <Route path="/listed/overview" element={<ListedOverview/>}></Route>
+
 
 
           <Route path="/" element={<Home />} />
         </Routes>
-        </React.Fragment>
 
         
       </main>
       <Footer></Footer>
+      </ThemeContext.Provider>
     </BrowserRouter>
     </div>
 

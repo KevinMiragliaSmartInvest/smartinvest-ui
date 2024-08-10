@@ -20,7 +20,7 @@ export default function ConsignGeneral() {
 
   return (
     <main className="">
-      <div className="main-body center grid grid-cols-2 gap-2">
+      <div className="main-body center">
         <ConsignmentGeneral/>
       </div>
     </main>

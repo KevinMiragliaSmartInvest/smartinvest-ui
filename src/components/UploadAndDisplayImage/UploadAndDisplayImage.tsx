@@ -9,8 +9,8 @@ const UploadAndDisplayImage = () => {
   return (
     <div>
       {/* Header */}
-      <h1>Upload and Display Image</h1>
-      <h3>using React Hooks</h3>
+      <h2>Upload and Display Image</h2>
+
 
       {/* Conditionally render the selected image if it exists */}
       {selectedImage && (
